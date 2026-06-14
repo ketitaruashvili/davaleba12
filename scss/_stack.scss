@@ -1,0 +1,38 @@
+.my-stack {
+  text-align: center;
+  padding: 60px 0;
+
+  h2 {
+    font-size: $font-lg;
+    color: $color-secondary;
+    margin-bottom: 15px;
+  }
+
+  span {
+    font-size: $font-md;
+    color: $color-primary;
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  .stack-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+
+    img {
+      max-width: 120px;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 40px 0;
+
+    span {
+      margin-bottom: 40px;
+      font-size: $font-base;
+    }
+  }
+}

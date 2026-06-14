@@ -1,0 +1,50 @@
+header {
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    a {
+      color: $color-primary;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+
+      ul {
+        display: flex;
+        column-gap: 50px;
+
+        a {
+          color: $color-primary;
+        }
+      }
+
+      .social-media {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header-content {
+      flex-direction: column;
+      row-gap: 15px;
+
+      .nav-list {
+        flex-direction: column;
+        row-gap: 15px;
+      }
+    }
+  }
+}
