@@ -1,0 +1,114 @@
+.my-project {
+  text-align: center;
+  padding: 60px 0;
+
+  h2 {
+    font-size: $font-lg;
+    color: $color-secondary;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: $font-md;
+    color: $color-primary;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .project-list {
+    margin: 100px 0px;
+    @include dFlex(space-between, stretch);
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    .card {
+      @extend .card-base;
+      width: 373px;
+      height: 567px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: $font-sm;
+        color: $third-color;
+        padding: 20px 0 20px 0;
+      }
+
+      .image-wrapper-1,
+      .image-wrapper-2,
+      .image-wrapper-3,
+      .image-wrapper-4,
+      .image-wrapper-5,
+      .image-wrapper-6 {
+        height: 260px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px 15px 0px 0px;
+      }
+      .image-wrapper-1 {
+        background-image: url("../images/SCR-20260618-caym.jpeg");
+      }
+      .image-wrapper-2 {
+        background-image: url("../images/SCR-20260618-ccid.png");
+      }
+
+      .image-wrapper-3 {
+        background-image: url("../images/SCR-20260618-cjow.png");
+      }
+      .image-wrapper-4 {
+        background-image: url("../images/SCR-20260618-clid.jpeg");
+      }
+      .image-wrapper-5 {
+        background-image: url("../images/SCR-20260618-cmeu.png");
+      }
+      .image-wrapper-6 {
+        background-image: url("../images/SCR-20260618-cnbm.png");
+      }
+      .about-projects {
+        padding: 27px 30px 10px;
+
+        p {
+          font-size: $font-base;
+          color: $color-primary;
+        }
+      }
+
+      .links {
+        margin-top: auto;
+        padding: 30px 55px 30px;
+        display: flex;
+        align-items: center;
+
+        a {
+          align-items: center;
+          color: $third-color;
+          text-decoration: underline;
+          margin-left: 6px;
+          margin-right: 25px;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    justify-content: center;
+
+    .card {
+      width: 100%;
+      max-width: 373px;
+      height: auto;
+      margin: auto;
+
+      .links {
+        margin-top: 20px;
+      }
+    }
+  }
+}
